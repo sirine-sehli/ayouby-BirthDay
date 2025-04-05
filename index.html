@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gharbi </title>
+    <link rel="icon" href="love.png">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="imgback">
+    </div>
+   
+    <header>
+        <h1> <center> Safe home </center>  </h1>
+    </header>
+    <audio id="audio"> 
+        <source src="blue_love.m4a" type="audio/mpeg">
+    </audio>
+    <button id="btn"  style="font-size: 20px; padding: 10px;"> Cliquez ici</button>
+    <script>
+        let audio=document.getElementById("audio");
+        let btn=document.getElementById("btn");
+        btn.addEventListener("click",
+            function(){
+                audio.play().then(() =>{
+                   btn.style.display="none";
+                }).catch((erreur)=> {
+                   console.log("erreeeur sahby",erreur);
+               });
+            }); 
+
+
+    </script>
+
+    <nav>
+        <a href="1pg.html" target="zone">   <3 </a>
+        <a href="2pg.html" target="zone"  height="300px">  <3   </a>
+        <a href="3pg.html" target="zone">  <3 </a>
+
+    </nav>
+    <article>
+        <iframe src="" frameborder="0" name="zone" height="300px" width="100%"></iframe>
+    </article>
+    <br>
+    <button onclick="showmessage()"> Cliquez ici 
+    </button>
+    <p id="ms" style="display: none; color: rgb(119, 63, 10); font-size:  30px; "></p>
+    <script>
+        function showmessage(){
+            document.getElementById("ms").innerText="kol aam w entii maya ayoubty <3";
+            document.getElementById("ms").style="text-align:center;";
+        }  
+    </script>
+    <footer>le 07 avril 2025 00h:00</footer>
+</body>
+</html>

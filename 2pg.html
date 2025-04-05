@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Sirine</title>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+#tree{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(105, 63, 0);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    left: 42%;
+}
+.orn{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(238, 228, 165);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.orn:nth-child(2){top:70px;left:120px}
+.orn:nth-child(3){top:140px;left:20px}
+.orn:nth-child(4){top:150px;left:70px}
+.orn:nth-child(5){top:20px;left:80px}
+.orn:nth-child(6){top:30px;left:30px}
+.orn:nth-child(8){top:90px;left:30px}
+.orn:nth-child(9){top:180px;left:130px}
+.orn:nth-child(10){top:90px;left:100px}
+.orn:nth-child(11){top:50px;left:160px}
+.orn:nth-child(12){top:110px;left:150px}  
+.orn:nth-child(13){top:150px;left:170px}
+#mss{
+    font-size: 26px;
+    color: rgb(77, 38, 12);
+    font-weight: bold;
+    display: none;
+}
+#message{
+    font-size: 26px;
+    color: rgb(77, 38, 12);
+    font-weight: bold;
+    display: none;
+    font-family: 'Dancing Script' , cursive;
+    font-weight:bold;
+}
+
+#mss{
+    text-align: center;
+    animation: infinite 4s pk1 ;
+}
+@keyframes pk1 {
+    50%{color:rgb(186, 167, 25);}
+    65%{letter-spacing: 2px;}
+}
+</style>
+</head>
+<body>
+    <div id="tree">
+        <div class="orn" onclick="shms('lhob , tu es mon bonheur chaque jour je t-aime fort ')"></div> 
+        <div class="orn" onclick="shms( 'you make  my heart smile dimma ayoub <3')"></div>
+        <div class="orn" onclick="shms('Barrshaaa Barshaa')"></div>
+        <div class="orn" onclick="shms('you are my everything')"></div>
+        <div class="orn" onclick="shms('Eres mi todo te amo con todo mi carazòn youba')"></div>
+        <div class="orn" onclick="shms('ouchiiii ')"></div>
+        <div class="orn" onclick="shms('ti amo <3')"></div>
+        <div class="orn" onclick="shms('sei la mia vita il mio cuore il mio amore ')"></div>
+        <div class="orn" onclick="shms('being with you feels lik home wallaaah')"></div>
+        <div class="orn" onclick="shms('cada dia te quiero màs eres mi felicidad')"></div>
+        <div class="orn" onclick="shms('je t-aime infinimemt')"></div>
+        <div class="orn" onclick="shms(' you make my world brighter im so lucky to have you BOSS')"></div>
+        <div class="orn" onclick="shms('having you in my life makes everything betteeeeer <3')"></div>
+        
+    </div>
+ <p id="mss"> yekhii nhebeeeeeekk</p>
+
+<script>
+    function shms(message){
+        document.getElementById("mss").style.display="block"
+        document.getElementById("mss").innerText=message;
+           
+
+    }
+</script>    
+</body>
+</html>
